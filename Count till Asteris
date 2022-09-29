@@ -1,0 +1,19 @@
+Upper=0
+Lower=0
+Count=0
+Sel=[]
+print("ENTER * TO QUIT")
+while(Sel!='*'):
+    Sel=input("ENTER THE ELEMENT: ")
+    if(Sel>='A' and Sel<='Z'):
+        Upper+=1
+    elif(Sel>='a' and Sel<='z'):
+        Lower+=1
+    elif(Sel>='0' and Sel<='9'):
+        Count+=1
+    if(Sel=='!' and Sel=='@' and Sel=='#' and Sel=='$' and Sel=='%' and Sel=='^' and arr=='&' and arr=='(' and arr==')' and arr=='_' and arr=='-' and arr=='+' and arr=='=' and arr=='~' and arr=='`'):
+        print("SPECIAL CHARACTERS ARE NOT ALLOWDED")
+        exit()
+print("NUMBER OF UPPER CASE: ",Upper)
+print("NUMBER OF LOWER CASE:",Lower)
+print("NUMBER OF NUMBERS:",Count)
